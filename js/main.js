@@ -1,4 +1,4 @@
-let referralCodes = ['STAR-VXJR-7MLS', 'STAR-H9QF-FB34', 'STAR-L4B4-VB6Z']
+let referralCodes = ['STAR-VXJR-7MLS', 'STAR-H9QF-FB34', 'STAR-L4B4-VB6Z', 'STAR-ZSMG-R9P9', 'STAR-GY4M-S664', 'STAR-DVV4-NM9S']
 const randomize = document.querySelector('.randomize');
 
 function randomReferralFromArray(array){
