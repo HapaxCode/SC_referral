@@ -1,0 +1,142 @@
+@import "./reset";
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import "./mixins";
+@import "./placeholders";
+
+body {
+    height: 100vh;
+    background: url(../images/body-background.jpg) no-repeat fixed center center;
+    background-size: cover;
+    background-color: $globalBackgroundColor;
+    color: $primaryTextColor;
+    font-weight: 300;
+    text-align: center;
+    font-family: $globalFontFamily;
+    p {
+        margin: $margin;
+        padding: $padding;
+    }
+}
+
+.subtitle {
+    font-style: italic;
+    margin-top: -$margin*1.5;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+header {
+    @extend %flex-center;
+    a {
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+h1 {
+    font-weight: 700;
+    font-size: $fontSize*4;
+    padding: $padding;
+    margin: $margin;
+}
+
+a {
+    color: $secondaryTextColor;
+    text-decoration: none;
+    transition: $transition;
+    &:hover {
+        color: $globalBackgroundColor;
+        background-color: $secondaryTextColor;
+    }
+}
+
+#logoSC, #logoAzgharie {
+    flex-grow: 0;
+    margin: $margin;
+    img {
+        max-height: 100px;
+    }
+}
+
+#mainTitle {
+    flex-grow: 1;
+}
+
+main {
+    @extend %flex-center;
+    line-height: 1.5;
+}
+
+.content {
+    @extend %flex-column;
+    max-width: 700px;
+    margin: $margin;
+    padding: $padding;
+    border: $border;
+    background-color: $contentBackgroundColor;
+    border-radius: $borderRadius;
+    p {
+        text-align: left;
+        border-left: 4px solid grey;
+    }
+    p.warning {
+        font-weight: 400;
+        text-align: center;
+        border: 0px;
+    }
+    
+}
+
+.generator {
+    @extend %flex-center;
+}
+
+button {
+    font-weight: 700;
+    font-size: $fontSize*1.5;
+    padding: 10px;
+    margin: $margin;
+    cursor: pointer;
+    border: 2px solid $secondaryTextColor;
+    border-radius: $borderRadius;
+    color: $secondaryTextColor;
+    background: rgb(49, 55, 63);
+    transition: $transition;
+    &:hover {
+        color: $globalBackgroundColor;
+        background-color: $secondaryTextColor;
+        border-radius: $borderRadius+6;
+    }
+}
+
+#result {
+    //display: none;
+    height: 0px;
+    transition : height 0.4s linear;
+    p#yourReferral {
+        font-size: $fontSize*5;
+        font-weight: 700;
+        height: 0px;
+        transition : height 1s linear;
+    }
+    p#yourReferralComment {
+        margin-top: -$margin*2.5;
+        font-style: italic;
+        display: none;
+    }
+}
+
+footer {
+   margin-top: $margin; 
+   .links {
+        @extend %flex-center;
+       a {
+           display: block;
+           border-radius: 50px;
+           margin: $margin/2;
+           margin-bottom: $margin/8;
+           padding: $padding;
+       }
+   }
+}

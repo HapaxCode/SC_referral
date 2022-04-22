@@ -1,0 +1,18 @@
+// Colors
+$globalBackgroundColor: rgb(19, 26, 33);
+$contentBackgroundColor: rgba(19, 26, 33, 0.8);
+
+//Typo
+$primaryTextColor: #fff;
+$secondaryTextColor: #0ff;
+$globalFontFamily: 'Roboto Condensed', sans-serif;
+$fontSize: 12px;
+
+// Layout
+$margin: 20px;
+$padding: 10px;
+
+// Design
+$border: 1px solid $secondaryTextColor;
+$borderRadius: 5px;
+$transition : all 0.8s ease-out;

@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+header, main, .generator, footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  height: 100vh;
+  background: url(../images/body-background.jpg) no-repeat fixed center center;
+  background-size: cover;
+  background-color: #131a21;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body p {
+  margin: 20px;
+  padding: 10px;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: -30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+header a:hover {
+  background-color: transparent;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  padding: 10px;
+  margin: 20px;
+}
+
+a {
+  color: #0ff;
+  text-decoration: none;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+a:hover {
+  color: #131a21;
+  background-color: #0ff;
+}
+
+#logoSC, #logoAzgharie {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin: 20px;
+}
+
+#logoSC img, #logoAzgharie img {
+  max-height: 100px;
+}
+
+#mainTitle {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main {
+  line-height: 1.5;
+}
+
+.content {
+  max-width: 700px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #0ff;
+  background-color: rgba(19, 26, 33, 0.8);
+  border-radius: 5px;
+}
+
+.content p {
+  text-align: left;
+  border-left: 4px solid grey;
+}
+
+.content p.warning {
+  font-weight: 400;
+  text-align: center;
+  border: 0px;
+}
+
+button {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  border: 2px solid #0ff;
+  border-radius: 5px;
+  color: #0ff;
+  background: #31373f;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+button:hover {
+  color: #131a21;
+  background-color: #0ff;
+  border-radius: 11px;
+}
+
+#result {
+  height: 0px;
+  -webkit-transition: height 0.4s linear;
+  transition: height 0.4s linear;
+}
+
+#result p#yourReferral {
+  font-size: 60px;
+  font-weight: 700;
+  height: 0px;
+  -webkit-transition: height 1s linear;
+  transition: height 1s linear;
+}
+
+#result p#yourReferralComment {
+  margin-top: -50px;
+  font-style: italic;
+  display: none;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer .links a {
+  display: block;
+  border-radius: 50px;
+  margin: 10px;
+  margin-bottom: 2.5px;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
