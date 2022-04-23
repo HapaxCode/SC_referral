@@ -114,11 +114,23 @@ button {
     //display: none;
     height: 0px;
     transition : height 0.4s linear;
+    p#yourReferralName {
+        border-left: none;
+        text-align: center;
+        display: none;
+        margin-bottom: $margin/1.5;
+        span#yourReferralNameSpan {
+            font-weight: 700;
+            font-size: $fontSize*1.5;
+        }
+    }
     p#yourReferral {
         font-size: $fontSize*5;
         font-weight: 700;
         height: 0px;
         transition : height 1s linear;
+        margin-top: -$margin*2.5;
+        cursor: pointer;
     }
     p#yourReferralComment {
         margin-top: -$margin*2.5;
@@ -139,4 +151,24 @@ footer {
            padding: $padding;
        }
    }
+}
+
+
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    #result {
+        p#yourReferral {
+            font-size: 2em;
+            line-height: 2.5em;
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    #logoSC, #logoAzgharie {
+        display: none;
+    }
 }

@@ -30,8 +30,9 @@
                 <button class="randomize">Trouver un referral code</button>
             </div>
             <div id="result">
-                <p id="yourReferral" class="warning" ></p>
-                <p id="yourReferralComment" class="warning">Copiez / collez ce referral code à la création de votre compte Star Citizen</p>
+                <p id="yourReferralName">Code du citoyen <span id="yourReferralNameSpan"></span>, merci pour lui :)</p>
+                <p id="yourReferral" class="warning" onclick="copy_to_clipboard(this.id);"></p>
+                <p id="yourReferralComment" class="warning">Cliquez dessus pour copier ce code</p>
             </div>
         </div>   
     </main>

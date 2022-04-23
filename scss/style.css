@@ -103,7 +103,7 @@ header a:hover {
 
 h1 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3.2em;
   padding: 10px;
   margin: 20px;
 }
@@ -128,7 +128,7 @@ a:hover {
 }
 
 #logoSC img, #logoAzgharie img {
-  max-height: 100px;
+  max-height: 80px;
 }
 
 #mainTitle {
@@ -163,7 +163,7 @@ main {
 
 button {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.2em;
   padding: 10px;
   margin: 20px;
   cursor: pointer;
@@ -187,12 +187,26 @@ button:hover {
   transition: height 0.4s linear;
 }
 
+#result p#yourReferralName {
+  border-left: none;
+  text-align: center;
+  display: none;
+  margin-bottom: 13.33333px;
+}
+
+#result p#yourReferralName span#yourReferralNameSpan {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
 #result p#yourReferral {
-  font-size: 60px;
+  font-size: 4em;
   font-weight: 700;
   height: 0px;
   -webkit-transition: height 1s linear;
   transition: height 1s linear;
+  margin-top: -50px;
+  cursor: pointer;
 }
 
 #result p#yourReferralComment {
@@ -211,5 +225,21 @@ footer .links a {
   margin: 10px;
   margin-bottom: 2.5px;
   padding: 10px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  #result p#yourReferral {
+    font-size: 2em;
+    line-height: 2.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  #logoSC, #logoAzgharie {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
