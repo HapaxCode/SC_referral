@@ -44,7 +44,7 @@ h1 {
 a {
     color: $secondaryTextColor;
     text-decoration: none;
-    transition: $transition;
+    transition: background-color 0.5s ease-in-out;
     &:hover {
         color: $globalBackgroundColor;
         background-color: $secondaryTextColor;
@@ -101,11 +101,11 @@ button {
     border: 2px solid $secondaryTextColor;
     border-radius: $borderRadius;
     color: $secondaryTextColor;
-    background: rgb(49, 55, 63);
-    transition: $transition;
+    background: linear-gradient(90deg, $globalBackgroundColor 50%, $secondaryTextColor 50%, $secondaryTextColor) var(--x, 0%)/ 200%;
+    transition: 0.5s;
     &:hover {
         color: $globalBackgroundColor;
-        background-color: $secondaryTextColor;
+        --x: 100%;
         border-radius: $borderRadius+6;
     }
 }

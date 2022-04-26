@@ -111,8 +111,8 @@ h1 {
 a {
   color: #0ff;
   text-decoration: none;
-  -webkit-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 a:hover {
@@ -170,14 +170,15 @@ button {
   border: 2px solid #0ff;
   border-radius: 5px;
   color: #0ff;
-  background: #31373f;
-  -webkit-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #131a21), color-stop(50%, #0ff), to(#0ff)) var(--x, 0%)/200%;
+  background: linear-gradient(90deg, #131a21 50%, #0ff 50%, #0ff) var(--x, 0%)/200%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 button:hover {
   color: #131a21;
-  background-color: #0ff;
+  --x: 100%;
   border-radius: 11px;
 }
 
