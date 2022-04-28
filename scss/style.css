@@ -62,22 +62,10 @@ header, main, .generator, footer .links {
           align-items: center;
 }
 
-.content {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
+/* ----- GENERAL ---------------------- */
 body {
   height: 100vh;
-  background: url(../images/body-background.jpg) no-repeat fixed center center;
+  background: url(../images/body-background.webp) no-repeat fixed center center;
   background-size: cover;
   background-color: #131a21;
   color: #fff;
@@ -89,16 +77,6 @@ body {
 body p {
   margin: 20px;
   padding: 10px;
-}
-
-.subtitle {
-  font-style: italic;
-  margin-top: -30px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-header a:hover {
-  background-color: transparent;
 }
 
 h1 {
@@ -120,6 +98,23 @@ a:hover {
   background-color: #0ff;
 }
 
+/* ----- HEADER ---------------------------- */
+header a:hover {
+  background-color: transparent;
+}
+
+#mainTitle {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: -30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 #logoSC, #logoAzgharie {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -131,17 +126,16 @@ a:hover {
   max-height: 80px;
 }
 
-#mainTitle {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
+/* ----- MAIN ------------------------------------ */
 main {
   line-height: 1.5;
 }
 
 .content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 700px;
   margin: 20px;
   padding: 10px;
@@ -216,6 +210,7 @@ button:hover {
   display: none;
 }
 
+/* ----- FOOTER ---------------------------------------- */
 footer {
   margin-top: 20px;
 }
@@ -228,6 +223,7 @@ footer .links a {
   padding: 10px;
 }
 
+/* ------ MEDIAQUERIES ----------------------------------- */
 @media (max-width: 600px) {
   h1 {
     font-size: 2em;
