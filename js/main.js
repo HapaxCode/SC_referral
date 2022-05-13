@@ -1,4 +1,4 @@
-let referralCodes = [['STAR-VXJR-7MLS', 'Xaxa84'], ['STAR-H9QF-FB34','DafunkyHapax'], ['STAR-L4B4-VB6Z', 'Nico_Farseeker'], ['STAR-ZSMG-R9P9', 'Mr_Teigneux'], ['STAR-GY4M-S664', 'DK-Asabrag'], ['STAR-DVV4-NM9S', 'Kryhos'], ['STAR-RKRT-NCSR', 'So666'], ['STAR-VP3Q-C6RQ','Shrek'], ['STAR-YPXV-N5J7','Ben13'], ['STAR-BXHG-ZBZD', 'Lestat_Lioncourt']];
+let referralCodes = [['STAR-VXJR-7MLS', 'Xaxa84'], ['STAR-H9QF-FB34','DafunkyHapax'], ['STAR-L4B4-VB6Z', 'Nico_Farseeker'], ['STAR-ZSMG-R9P9', 'Mr_Teigneux'], ['STAR-GY4M-S664', 'DK-Asabrag'], ['STAR-DVV4-NM9S', 'Kryhos'], ['STAR-RKRT-NCSR', 'So666'], ['STAR-VP3Q-C6RQ','Shrek'], ['STAR-YPXV-N5J7','Ben13'], ['STAR-BXHG-ZBZD', 'Lestat_Lioncourt'], ['STAR-3279-JG2M', 'Tom29FR']];
 const randomize = document.querySelector('.randomize');
 
 function randomReferralFromArray(array){
